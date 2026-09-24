@@ -2,6 +2,7 @@ import streamlit as slt
 import pandas as pd
 import joblib
 
+import os
 model=joblib.load(os.path.join(BASE_DIR, "Logistic_heart.pkl"))
 scaler=joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
 expected_columns=joblib.load(os.path.join(BASE_DIR, "columns.pkl"))
