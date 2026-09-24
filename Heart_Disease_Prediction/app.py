@@ -2,9 +2,9 @@ import streamlit as slt
 import pandas as pd
 import joblib
 
-model=joblib.load("Logistic_heart.pkl")
-scaler=joblib.load("scaler.pkl")
-expected_columns=joblib.load("columns.pkl")
+model=joblib.load(os.path.join(BASE_DIR, "Logistic_heart.pkl"))
+scaler=joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
+expected_columns=joblib.load(os.path.join(BASE_DIR, "columns.pkl"))
 
 slt.title("Heart Stroke prediction by Jagriti ")
 slt.markdown("Provide the following details")
